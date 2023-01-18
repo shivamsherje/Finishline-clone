@@ -1,0 +1,23 @@
+
+.scrollbar {
+    display: flex;
+    overflow-x: auto;
+    -ms-overflow-style: none; 
+    scrollbar-width: thin; 
+    margin: 0 auto 0 auto;
+    height: fit-content;
+  }
+  
+  .scrollbar::-webkit-scrollbar {
+    display: none; 
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  @media screen and (min-width: 200px) and (max-width: 640px) {
+
+.names-div{
+    visibility: none;
+}
+
+
+  }
