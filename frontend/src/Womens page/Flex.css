@@ -1,0 +1,16 @@
+@media screen and (min-width: 200px) and (max-width: 650px) {
+
+
+
+
+
+    .main-div{
+
+        width: 100%;
+    }
+}
+
+.secondDiv{
+    width: 80%;
+    margin-left: auto;
+}

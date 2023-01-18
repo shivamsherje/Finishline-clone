@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./Scroll.css";
 import img7 from "../Assets/Screenshot (194).png";
 import img8 from "../Assets/Screenshot (195).png";
 import img9 from "../Assets/Screenshot (197).png";
@@ -31,29 +31,33 @@ const Bar = () => {
   );
 };
 
-const Scroll2 = () => {
+const Scroll1 = () => {
   return (
     <>
-      <div style={{marginTop:"30px"}}>
+      <div style={{ width: "80%", margin: "auto" }}>
         <h1 style={{ fontWeight: "bold", fontSize: "20px" }}>
           TRENDING OUTFITS
         </h1>
       </div>
-      <div
-        style={{
-          padding: "20px",
-        }}
-      >
-        <div style={{ display: "flex", overflowX: "scroll", padding: "5px" }}>
+      <div>
+        <div
+          className="scrollbar"
+          style={{
+            scrollbarwidth: "none",
+            display: "flex",
+            overflowX: "scroll",
+            padding: "5px",
+            width: "80%",
+            margin: "auto",
+          }}
+        >
           <Bar />
         </div>
       </div>
-      <br />
-      <br />
+      <hr style={{width:"80%", margin:"auto"}}/>
 
-      <hr />
     </>
   );
 };
 
-export default Scroll2;
+export default Scroll1;
