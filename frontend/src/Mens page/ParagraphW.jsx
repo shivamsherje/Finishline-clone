@@ -1,16 +1,15 @@
 import React from "react";
+import { Grid, GridItem, Text } from "@chakra-ui/react";
 
-import { Grid, GridItem ,Text} from "@chakra-ui/react";
-
-const Grid3 = () => {
+const ParagraphW = () => {
   return (
     <div
       style={{
         margin: "auto",
-        width: "100%",
+        width: "90%",
         marginBottom: "30px",
         marginTop: "50px",
-        textAlign:"left"
+        textAlign: "left",
       }}
     >
       <Grid
@@ -24,7 +23,7 @@ const Grid3 = () => {
         gap={1}
       >
         <GridItem textAlign={"justify"}>
-          <Text fontWeight={"bold"}> MEN’S ATHLEISURE WEAR</Text>
+          <Text fontWeight={"bold"}>MEN’S ATHLEISURE WEAR</Text>
           <Text>
             Whether you’re hitting the gym, hanging with your friends, or
             watching the game, nothing beats men’s athleisure wear for your
@@ -37,10 +36,10 @@ const Grid3 = () => {
             you covered with the essential sweatshirts, Nike underwear and more
             from the brands you gotta have. Shop Men’s athleisure and
             accessories from Nike, adidas, Jordan, and more to ensure you’re
-            always ahead of the trends
+            always ahead of the trends.
           </Text>
         </GridItem>
-        <br/>
+        <br />
 
         <GridItem textAlign={"justify"}>
           <Text fontWeight={"bold"}>MEN’S ATHLEISURE SHOES</Text>
@@ -58,4 +57,4 @@ const Grid3 = () => {
   );
 };
 
-export default Grid3;
+export default ParagraphW;

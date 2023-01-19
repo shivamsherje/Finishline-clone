@@ -6,7 +6,7 @@ import { Grid, GridItem, Image, Text } from "@chakra-ui/react";
 
 const Grid2 = () => {
   return (
-    <div style={{ margin: "auto", width: "80%", marginBottom:"30px", marginTop:"50px" }}>
+    <div style={{ margin: "auto", width: "90%", marginBottom:"30px", marginTop:"50px" }}>
       <Grid
         width={"100%"}
         templateColumns={{

@@ -1,7 +1,7 @@
 import img1 from "../Assets/img1.jfif";
 import img2 from "../Assets/img2.jfif";
-import img3 from "../Assets/img3.webp";
-import img4 from "../Assets/img4.webp";
+import img3 from "../Assets/men3.webp";
+import img4 from "../Assets/men4.webp";
 import img5 from "../Assets/img5.jfif";
 import img6 from "../Assets/img6.jfif";
 import img7 from "../Assets/img7.jfif";
@@ -13,7 +13,7 @@ import React from "react";
 
 const Grid1 = () => {
   return (
-    <div style={{ width: "80%", margin: "auto" }}>
+    <div style={{ width: "90%", margin: "auto" }}>
       <Text fontWeight={"bold"} fontSize={"20px"}>
         SHOP THE LATEST & GREATEST STYLES
       </Text>
