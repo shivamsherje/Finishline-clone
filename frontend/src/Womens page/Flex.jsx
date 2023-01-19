@@ -1,8 +1,11 @@
 import React from "react";
 import { Box, Text } from "@chakra-ui/react";
-import img1 from "../Assets/mens_gird2_1_img.jfif";
-import img2 from "../Assets/mens_gird2_2_img.jfif";
-import img3 from "../Assets/mens_gird2_3_img.jfif";
+import img1 from "../Assets/women1.webp";
+import img2 from "../Assets/women2.png";
+import img3 from "../Assets/women3.png";
+import img4 from "../Assets/women4.png";
+import img5 from "../Assets/women5.png";
+import img6 from "../Assets/women6.png";
 import "./Flex.css"
 
 
@@ -10,13 +13,15 @@ import { Grid, GridItem, Image } from "@chakra-ui/react";
 import ScrollW1 from "./ScrollW1";
 import AfterGrid3 from "./Aftergrid3";
 import GridW1 from "./GridW1";
+import GridW3 from "./GridW3";
+
+
 const Flex = () => {
   return (
-    <div className="main-div" style={{ border: "1px solid red",display:"flex", width:"90%", margin:"auto",gap:"10px" }} >
+    <div className="main-div" style={{display:"flex", width:"90%", margin:"auto",gap:"10px" }} >
       <div
         className="names-div"
         style={{
-          border: "1px solid blue",
           textAlign: "left",
           fontSize:"15px"
         }}
@@ -91,7 +96,7 @@ const Flex = () => {
 
       <div className="secondDiv">
 
-    <h1 style={{fontSize:"18px", fontWeight:"bold"}}>SHOP BY CATEGORY</h1>
+    <h1 style={{fontSize:"18px", fontWeight:"bold"}}>WOMEN'S SHOES, CLOTHING & ACCESSORIES <br/>SHOP BY CATEGORY</h1>
       <Grid
         width={"100%"}
         templateColumns={{
@@ -103,43 +108,42 @@ const Flex = () => {
         gap={1}
       >
         <GridItem>
-          <Image src={img1} />
+          <Image src={img1} alt="" />
           <Text fontWeight={"bold"}>RUNNING SHOES</Text>
-              <a style={{ textDecoration: "underline" }}>Shop Now →</a>
+              <p style={{ textDecoration: "underline" }}>Shop Now →</p>
         
         </GridItem>
 
         <GridItem>
-          <Image src={img2} />
-          <Text fontWeight={"bold"}>RUNNING SHOES</Text>
-              <a style={{ textDecoration: "underline" }}>Shop Now →</a>
+          <Image src={img2} alt="" />
+          <Text fontWeight={"bold"}>CASUAL SHOES</Text>
+              <p style={{ textDecoration: "underline" }}>Shop Now →</p>
         </GridItem>
 
         <GridItem>
-          <Image src={img3} />
-          <Text fontWeight={"bold"}>RUNNING SHOES</Text>
-              <a style={{ textDecoration: "underline" }}>Shop Now →</a>
+          <Image src={img3} alt=""  />
+          <Text fontWeight={"bold"}>PLATFORM</Text>
+              <p style={{ textDecoration: "underline" }}>Shop Now →</p>
         </GridItem>
 
 
         <GridItem>
-          <Image src={img1} />
-          <Text fontWeight={"bold"}>RUNNING SHOES</Text>
-              <a style={{ textDecoration: "underline" }}>Shop Now →</a>
+          <Image src={img4} alt=""  />
+          <Text fontWeight={"bold"}>HOODIES AND SWEATSHIRT</Text>
+              <p style={{ textDecoration: "underline" }}>Shop Now →</p>
         </GridItem>
 
         <GridItem>
-          <Image src={img2} />
-          <Text fontWeight={"bold"}>RUNNING SHOES</Text>
-              <a style={{ textDecoration: "underline" }}>Shop Now →</a>
+          <Image src={img5} alt=""  />
+          <Text fontWeight={"bold"}>LEGGINGS</Text>
+              <p style={{ textDecoration: "underline" }}>Shop Now →</p>
         </GridItem>
 
         <GridItem>
-          <Image src={img3} />
-          <Text fontWeight={"bold"}>RUNNING SHOES</Text>
-              <a style={{ textDecoration: "underline" }}>Shop Now →</a>
+          <Image src={img6} alt="" />
+          <Text fontWeight={"bold"}>SWEATPANTS AND JOGGERS</Text>
+              <p style={{ textDecoration: "underline" }}>Shop Now →</p>
         </GridItem>
-      
       </Grid>
       
 
@@ -148,11 +152,12 @@ const Flex = () => {
 <AfterGrid3/>
 <GridW1/>
 
+<GridW3/>
+
 
 
 
     </div>
-
     </div>
   );
 };

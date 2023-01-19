@@ -41,7 +41,7 @@ class Slideshow extends Component {
     const slideImages = [img2, img3, img1, img4, img2, img3, img1, img4];
 
     return (
-      <div style={{ width: "80%", margin: "auto" , marginTop:"15px" }} className="App">
+      <div style={{ width: "90%", margin: "auto" , marginTop:"15px" }} className="App">
         <div className="slide-container">
           <Slide ref={this.slideRef} {...properties}>
             {slideImages.map((each, index) => (

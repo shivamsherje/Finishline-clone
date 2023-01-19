@@ -1,22 +1,13 @@
 import React from "react";
-import img1 from "../Assets/mens_gird_1_img.jfif";
-import img2 from "../Assets/mens_gird_1_img2.jfif";
+import img1 from "../Assets/women7.jfif";
 
 const GridW1 = () => {
   return (
     <>
       <h1 style={{fontWeight:"bold", fontSize:"20px",marginTop:"30px"}}>WHAT'S HOT RIGHT NOW</h1>
 
-      <div className="gridm1" style={{ display: "flex",justifyContent:"space-between", marginTop:"30px" }}>
-
-        <div style={{ width: "49%" }}><img className="img1"  src={img1} />
-        <p style={{textDecoration:"underline"}}>Nike Air Max</p>
-        </div>
-          <div style={{ width: "49%" }}><img className="img2"  src={img2} />
-          <p style={{textDecoration:"underline"}}>classic</p>
-</div>
-
-
+      <div className="gridm1" style={{ marginTop:"30px" }}>
+        <img className="img1" style={{width:"100%"}} src={img1}  alt=""  />    
       </div>
     </>
   );

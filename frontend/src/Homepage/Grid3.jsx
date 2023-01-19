@@ -11,7 +11,7 @@ const Grid3 = () => {
     <div
       style={{
         margin: "auto",
-        width: "80%",
+        width: "90%",
         marginBottom: "30px",
         marginTop: "50px",
       }}

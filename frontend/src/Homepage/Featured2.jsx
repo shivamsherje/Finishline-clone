@@ -11,20 +11,22 @@ const Featured2 = () => {
     <div
       style={{
         margin: "auto",
-        width: "80%",
+        width: "90%",
         marginBottom: "30px",
         marginTop: "50px",
+        border:"2px solid gray"
       }}
     >
-      <Grid
-        width={"100%"}
+      <Grid 
+       padding={"5%"}
+        margin={"auto"}
         templateColumns={{
           base: "repeat(2, 1fr)",
           md: "repeat(2, 1fr)",
           lg: "repeat(2, 1fr)",
           xl: "repeat(2, 1fr)",
         }}
-        gap={6}
+      
       >
         <GridItem>
           <Image src={img1} />

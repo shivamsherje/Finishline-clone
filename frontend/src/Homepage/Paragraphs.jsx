@@ -6,11 +6,10 @@ const Paragraphs = () => {
       className="Paragraphs"
       style={{
         fontSize: "14px",
-        width: "80%",
+        width: "90%",
         margin: "auto",
         display: "flex",
         justifyContent: "space-evenly",
-        // gap: "30",
       }}
     >
       <div className="Paragraphs-div" style={{ padding: "5px" }}>

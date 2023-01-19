@@ -1,6 +1,6 @@
 import React from "react";
 
-import img1 from "../Assets/scb1.jpeg";
+import img1 from "../Assets/home1.jpeg";
 
 
 const Top = () => {
@@ -12,3 +12,4 @@ const Top = () => {
 };
 
 export default Top;
+

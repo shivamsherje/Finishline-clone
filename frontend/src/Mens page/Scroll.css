@@ -13,11 +13,3 @@
     -webkit-overflow-scrolling: touch;
   }
   
-  @media screen and (min-width: 200px) and (max-width: 640px) {
-
-.names-div{
-    visibility: none;
-}
-
-
-  }
