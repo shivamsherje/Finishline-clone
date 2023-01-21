@@ -1,0 +1,210 @@
+.men-detail-main-con {
+    /* border: 1px solid green; */
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.men-detail-main-con>div {
+    /* border: 1px solid green; */
+}
+
+.men-detail-prod-box {
+    /* border: 1px solid red; */
+    width: 600px;
+}
+
+.mySwiper2 {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 600px;
+}
+
+.mySwiper2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.men-detail-rating-div {
+    /* border: 1px solid green; */
+    display: flex;
+    gap: 15px;
+}
+
+.men-detail-title {
+    font-weight: bolder;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.men-detail-price {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.men-detail-info {
+    font-size: 14px;
+    display: flex;
+    gap: 5px;
+}
+
+.men-detail-info>span {
+    font-weight: bolder;
+}
+
+.men-detail-color {
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.men-detail-color>#men-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.men-detail-size-div {
+    /* border: 1px solid blueviolet; */
+    margin-top: 40px;
+}
+
+.men-detail-size-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.men-detail-size-div>h1 {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.men-detail-size-div>button {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.men-detail-size-number {
+    margin-top: 10px;
+    /* border: 1px solid red; */
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.men-detail-size-number>button {
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid rgb(192, 190, 190);
+    padding: 5px;
+}
+
+.men-detail-size-number>button:hover {
+    background-color: grey;
+    color: white;
+}
+
+.sizeactive {
+    background-color: gray;
+    color: white;
+}
+
+.men-detail-shipto-address {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.men-detail-shipto-address>h2 {
+    font-weight: normal;
+    font-size: 18px;
+
+}
+
+.men-detail-shipto-address>input[type='radio'] {
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+
+.men-det-freeship {
+    font-size: 12px;
+    font-weight: bolder;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.men-detail-add-to-cart {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 50px;
+    background-color: #008fdb;
+    font-weight: bolder;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.men-detail-status-des {
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-columns: repeat(2, 10% 90%);
+    gap: 10px;
+}
+
+.men-detail-status-des>div img {
+    width: 100%;
+}
+
+.men-detail-status-des>div>span {
+    font-size: 13px;
+}
+
+.men-detail-status-des>div>span>a {
+    text-decoration: underline;
+}
+
+.men-detail-status-des>div>span>a:hover {
+    color: #008fdb;
+    cursor: pointer;
+}
+
+.men-detail-des-summary-line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* //================================================================ */
+
+.men-detail-description-box {
+    width: 85%;
+    margin: auto;
+    /* border: 1px solid greenyellow; */
+    text-align: left;
+}
+
+.men-detail-description-box>details>summary {
+    list-style: none;
+    transition: margin 150ms ease-out;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.men-detail-description-box details[open] summary {
+    margin-bottom: 10px;
+}
+
+.men-detail-description-box details summary::-webkit-details-marker {
+    display: none;
+}
+
+.men-detail-description-box summary {
+    display: flex;
+    justify-content: space-between;
+}

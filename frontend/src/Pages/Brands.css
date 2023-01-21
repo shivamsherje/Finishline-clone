@@ -1,0 +1,33 @@
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.grid-of-logos {
+    margin: auto;
+    width: 80%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.lable-of-grid {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.paragraph-main-container {
+    margin: auto;
+    width: 90%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.paragraph-title-texts {
+    font-weight: bold;
+}
+
+.child-container-paragraph {
+    text-align: justify;
+}

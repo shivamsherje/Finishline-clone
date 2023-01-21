@@ -1,0 +1,94 @@
+.item-title {
+    font-weight: bold;
+}
+
+.Newarrivals-main-container {
+    display: flex;
+    width: 90%;
+    gap: 1%;
+    margin: auto;
+}
+
+.categories-container-name-checkbox-div {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+.categories-container {
+    width: 40%;
+}
+
+.subcategories-containers>p {
+    font-weight: bold;
+    text-align: left;
+}
+
+input.checkbox {
+    width: 1em;
+    height: 1em;
+}
+
+.grid-container-heading {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.categories-logos-container>p {
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.items-in-grid {
+    text-align: left;
+}
+
+.size-container-in-categories {
+    margin-top: 20px;
+}
+
+.grid-items-size-container {
+    border: 1px solid gray;
+    align-items: center;
+}
+
+.size-title {
+    text-align: left;
+    font-weight: bold;
+}
+
+.color-container-sub-container {
+    display: flex;
+    gap: 5px;
+    margin: left;
+    margin-bottom: 10px;
+}
+
+.color-div {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid grey;
+}
+
+.color-container>h1 {
+    text-align: left;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+    * {
+        font-size: 12px;
+    }
+
+    .grid-container-heading {
+        font-size: 18px;
+    }
+
+    .categories-container {
+        display: none;
+    }
+}
