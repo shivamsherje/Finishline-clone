@@ -1,0 +1,35 @@
+.Afterslideshow-divs {
+    border: 0.1px solid gray;
+    padding: 10px;
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+}
+
+.Afterslideshow {
+    border: 0.1px solid gray;
+    border-left: none;
+    border-right: none;
+}
+
+#firstdiv {
+    border-left: none;
+}
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+    .Afterslideshow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Afterslideshow-divs {
+        border: 1px solid gray;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+    }
+
+    #lastdiv {
+        border-bottom: none;
+    }
+}
