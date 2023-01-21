@@ -28,6 +28,7 @@ import { Pagination, Navigation } from "swiper";
 import axios from 'axios'
 import Card from '../Sliders/Card';
 
+
 import { Grid, GridItem, Image,Heading} from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import "swiper/css";
