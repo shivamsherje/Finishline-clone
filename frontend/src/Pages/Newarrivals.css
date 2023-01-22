@@ -1,13 +1,18 @@
 .item-title {
     font-weight: bold;
+    font-size: 16px;
 }
 
 .Newarrivals-main-container {
-    display: flex;
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-columns: repeat(2, 15% 85%);
     width: 90%;
-    gap: 1%;
+    /* gap: 1%; */
     margin: auto;
 }
+
+
 
 .categories-container-name-checkbox-div {
     display: flex;
@@ -17,7 +22,13 @@
 }
 
 .categories-container {
-    width: 40%;
+    border: 1px solid rgb(200, 198, 198);
+    padding: 10px;
+    height: 100vh;
+    overflow: scroll;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .subcategories-containers>p {
@@ -42,8 +53,15 @@ input.checkbox {
     text-align: left;
 }
 
+.item-price {
+    /* border: 1px solid red; */
+    margin-bottom: 10px;
+}
+
 .items-in-grid {
     text-align: left;
+    border: 1px solid rgb(233, 231, 231);
+    padding: 10px;
 }
 
 .size-container-in-categories {
@@ -65,6 +83,17 @@ input.checkbox {
     gap: 5px;
     margin: left;
     margin-bottom: 10px;
+}
+
+
+.quick-voiew-btn {
+    border: 1px solid rgb(234, 234, 234);
+    width: 50%;
+    background-color: #5271ff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 
 .color-div {

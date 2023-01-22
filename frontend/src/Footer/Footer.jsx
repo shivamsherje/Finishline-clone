@@ -16,7 +16,7 @@ export default function Footer() {
                 className="footer"
                 style={{
                     display: "flex",
-                    width: "80%",
+                    width: "90%",
                     margin: "auto",
                     fontSize: "12px",
                     justifyContent: "space-evenly",

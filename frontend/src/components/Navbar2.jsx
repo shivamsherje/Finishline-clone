@@ -5,6 +5,7 @@ import { MenDropdown } from './Dropdown'
 import { NewArrivalDropdown } from './Dropdown'
 import { Link } from 'react-router-dom'
 
+
 export default function Navbar2() {
     const [DropdownNewarrival, setDropdownNewarrival] = useState(false)
     const [DropdownMen, setDropdownMen] = useState(false)

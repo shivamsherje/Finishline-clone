@@ -1,0 +1,98 @@
+.main-container-of-checkout {
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2, 60% 40%);
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.shipping-and-cart-details {
+    /* border: 1px solid teal; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+
+}
+
+.shipping-container {
+    margin: auto;
+    width: 60%;
+    text-align: left;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+
+}
+
+.shipping-container>input {
+    width: 90%;
+    padding: 10px;
+
+}
+
+.shipping-container>p {
+    font-weight: bold;
+}
+
+.checkbox-div {
+    display: flex;
+}
+
+input.cart-checkbox {
+    width: 2em;
+
+}
+
+
+
+
+.Order-Summary-details {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+}
+
+.Order-Summary-details-subdiv {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+.Order-Summary-details-subdiv p:nth-child(2) {
+    font-weight: bold;
+
+}
+
+.heading-of-order {
+    /* border: 1px solid red; */
+    font-weight: bold;
+    font-size: 20px;
+
+
+}
+
+
+@media (max-width: 1000px) {
+    .main-container-of-checkout {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .shipping-container {
+        width: 90%;
+    }
+
+}
+
+.payment-button {
+    font-weight: bold;
+    color: white;
+    background-color: #4A545D;
+    font-size: 16px;
+    border: none;
+    width: 94%;
+    padding: 10px;
+    margin: auto;
+}

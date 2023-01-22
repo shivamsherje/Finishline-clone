@@ -66,6 +66,7 @@
     left: 0px;
     padding-top: 20px;
     background-color: white;
+    z-index: 2;
 }
 
 #Account-Submenu {
@@ -77,6 +78,7 @@
     width: 416px;
     right: 8.5%;
     background-color: white;
+    z-index: 2;
 }
 
 #Account-Submenu>a {
@@ -154,8 +156,7 @@
 .navbar2 {
     border-bottom: 1px solid rgb(202, 203, 200);
     padding: 5px;
-
-    margin-top: 10px;
+    margin-top: -15px;
 }
 
 .navbar2-box {
@@ -173,20 +174,20 @@
     font-size: 14px;
     color: rgb(65, 64, 64);
 }
-.navbar2-box>div{
-    margin-top: -30px;
-}
 
 #NewArrival-Submenu {
     /* border: 1px solid rgb(255, 99, 47); */
     position: absolute;
-    top: 120px;
-    width: 90%;
+    top: 105px;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 20px;
     gap: 30px;
-    background-color: #ffff;
+    left: 0px;
+    z-index: 2;
+    background-color: white;
+    padding: 50px 10%;
 }
 
 #NewArrival-Submenu img {

@@ -6,6 +6,7 @@ import { NavMenSlider } from './NavSlider'
 
 
 
+
 export const MenDropdown = () => {
     const [dropdown, setDropdown] = useState(false)
     return (
@@ -35,12 +36,14 @@ export const NewArrivalDropdown = () => {
     )
 }
 
+const checkIsAuth = JSON.parse(localStorage.getItem("isAuth"))
+
 export const AccountDropdown = () => {
     const [dropdown, setDropdown] = useState(false)
     return (
         <div id='Account-Submenu' className={dropdown ? 'Account-Submenu-Open' : 'Account-Submenu-Close'} onClick={() => setDropdown(!dropdown)}>
-            <Link to="/signin">Sign In</Link>
-            <Link to="/register">Register</Link>
+            <Link to="/signin">{checkIsAuth ? "Profile" : "Sign In"}</Link>
+            {checkIsAuth ? "" : <Link to="/register">Register</Link>}
             <Link to="/status">STATUS</Link>
             <Link to="/favorites">Favorites</Link>
         </div>

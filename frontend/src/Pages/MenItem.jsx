@@ -3,7 +3,6 @@ import axios from 'axios'
 import { useState } from 'react'
 import { useEffect } from 'react'
 
-import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 
 export default function MenItem() {
@@ -11,7 +10,7 @@ export default function MenItem() {
 
     console.log(data)
     const GetData = () => {
-        axios.get(`https://mirsat-vercel-database-eqatqtp9z-saikhmirsat.vercel.app/sportszone`)
+        axios.get(`https://shivam-vercel-db-eh2q.vercel.app/sportsline`)
             .then((res) => setData(res.data))
     }
     useEffect(() => {

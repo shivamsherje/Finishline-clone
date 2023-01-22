@@ -1,0 +1,62 @@
+.profile-container {
+    /* border: 1px solid red; */
+    background-color:#f5f5f5;
+}
+.profile-heading{
+    background-color: white;
+padding: 20px;
+}
+.profile-container button {
+    margin-top: 30px;
+    padding: 5px 20px;
+}
+.my-details-container{
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: auto;
+
+}
+
+.grid-items-profile{
+    /* border: 1px solid green; */
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+}
+.HEADING-OF-EVERY-GRID{
+    font-weight: BOLD;
+    color: #1b5e20;
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+}
+.grid-items-profile > img{
+    width: 80px;
+    margin: auto;
+
+}
+
+.my-details-name{
+    font-size: 18px;
+    font-weight: bold;
+}
+.dob{
+    font-weight: bold;
+ 
+}
+.register-email{
+    font-size: 18px;
+    font-weight: bold;
+    color: purple;
+}
+
+.img-grid-container-profile{
+    /* border: 1px solid red; */
+
+}
+
+.img-inside-grid-container-profile{
+    /* border: 1px solid red; */
+    margin: auto;
+
+
+}

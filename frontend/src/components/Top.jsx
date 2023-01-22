@@ -6,7 +6,7 @@ import img1 from "../Assets/home1.jpeg";
 const Top = () => {
   return (
     <div>
-      <img src={img1} alt="" />
+      <img src={img1} />
     </div>
   );
 };

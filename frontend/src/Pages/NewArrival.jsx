@@ -6,6 +6,7 @@ import { Grid, GridItem, Image } from "@chakra-ui/react";
 import "./Newarrivals.css";
 import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
+import { motion } from 'framer-motion'
 
 
 import img17 from "../Assets/imgD.png";
@@ -18,19 +19,20 @@ import img20 from "../Assets/imgA.png";
 
 
 export default function NewArrival() {
-
+  const [text, setText] = useState("")
+  console.log(text)
   const [data, setData] = useState([]);
   const ShoeData = () => {
     axios
       .get(
-        `https://mirsat-vercel-database-eqatqtp9z-saikhmirsat.vercel.app/sportszone`
+        `https://shivam-vercel-db-eh2q.vercel.app/sportsline?q=${text}`
       )
       .then((res) => setData(res.data));
   };
 
   useEffect(() => {
     ShoeData();
-  }, []);
+  }, [text]);
 
   return (
     <div>
@@ -44,19 +46,19 @@ export default function NewArrival() {
             <p>Gender</p>
             <div className="categories-container-name-checkbox-div">
               <label> Men</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('men')} />
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> Women</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('Women')} />
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> Boys</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('boys')} />
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> Girls</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('girls')} />
             </div>
           </div>
           <br />
@@ -122,19 +124,19 @@ export default function NewArrival() {
             <p>Category</p>
             <div className="categories-container-name-checkbox-div">
               <label> Shoes</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('shoes')} />
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> Clothing</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('Cloths')} />
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> Accessories</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('accessories')} />
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> Girls</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('girls')} />
             </div>
           </div>
           <br />
@@ -261,35 +263,35 @@ export default function NewArrival() {
             <p>Activity</p>
             <div className="categories-container-name-checkbox-div">
               <label> Casual</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('Casual')} />
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> Running</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('Running')} />
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> Basketball</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('basketball')} />
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> Soccer</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('Soccer')} />
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> Hiking</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('Hiking')} />
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> Tennis</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('Tennis')} />
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> Baseball</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('Baseball')} />
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> Training</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('Training ')} />
             </div>
           </div>
           <br />
@@ -304,12 +306,12 @@ export default function NewArrival() {
                 style={{ backgroundColor: "black" }}
                 className="color-div"
               ></div>
-              <p> Black</p>
+              <p> Black</p><input type="checkbox" onChange={() => setText("black")} />
             </div>
 
             <div className="color-container-sub-container">
               <div className="color-div"></div>
-              <p> White</p>
+              <p> White</p><input type="checkbox" onChange={() => setText("white")} />
             </div>
 
             <div className="color-container-sub-container">
@@ -317,7 +319,7 @@ export default function NewArrival() {
                 style={{ backgroundColor: "blue" }}
                 className="color-div"
               ></div>
-              <p> Blue</p>
+              <p> Blue</p><input type="checkbox" onChange={() => setText("blue")} />
             </div>
 
             <div className="color-container-sub-container">
@@ -325,13 +327,13 @@ export default function NewArrival() {
                 style={{ backgroundColor: "gray" }}
                 className="color-div"
               ></div>
-              <p> Gray</p>
+              <p> Gray</p><input type="checkbox" onChange={() => setText("grey")} />
             </div>
 
             <div className="color-container-sub-container">
               <div style={{ backgroundColor: "red" }}
                 className="color-div"></div>
-              <p> Red</p>
+              <p> Red</p><input type="checkbox" onChange={() => setText("red")} />
             </div>
 
             <div className="color-container-sub-container">
@@ -339,7 +341,7 @@ export default function NewArrival() {
                 style={{ backgroundColor: "pink" }}
                 className="color-div"
               ></div>
-              <p> Pink</p>
+              <p> Pink</p><input type="checkbox" onChange={() => setText("pink")} />
             </div>
 
             <div className="color-container-sub-container">
@@ -347,7 +349,7 @@ export default function NewArrival() {
                 style={{ backgroundColor: "purple" }}
                 className="color-div"
               ></div>
-              <p> Purple</p>
+              <p> Purple</p><input type="checkbox" onChange={() => setText("purple")} />
             </div>
 
             <div className="color-container-sub-container">
@@ -355,7 +357,7 @@ export default function NewArrival() {
                 style={{ backgroundColor: "green" }}
                 className="color-div"
               ></div>
-              <p> Green</p>
+              <p> Green</p><input type="checkbox" onChange={() => setText("green")} />
             </div>
 
             <div className="color-container-sub-container">
@@ -363,7 +365,7 @@ export default function NewArrival() {
                 style={{ backgroundColor: "yellow" }}
                 className="color-div"
               ></div>
-              <p> Yellow</p>
+              <p> Yellow</p><input type="checkbox" onChange={() => setText("yellow")} />
             </div>
 
             <div className="color-container-sub-container">
@@ -371,7 +373,7 @@ export default function NewArrival() {
                 style={{ backgroundColor: "brown" }}
                 className="color-div"
               ></div>
-              <p> Brown</p>
+              <p> Brown</p><input type="checkbox" onChange={() => setText("brown")} />
             </div>
 
             <div className="color-container-sub-container">
@@ -379,7 +381,7 @@ export default function NewArrival() {
                 style={{ backgroundColor: "orange" }}
                 className="color-div"
               ></div>
-              <p> Orange</p>
+              <p> Orange</p><input type="checkbox" onChange={() => setText("orange")} />
             </div>
           </div>
           {/* color container ends */}
@@ -393,23 +395,23 @@ export default function NewArrival() {
             <p>Collection</p>
             <div className="categories-container-name-checkbox-div">
               <label>Jordan Retro</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('Jordan')} />
             </div>
             <div className="categories-container-name-checkbox-div">
               <label>Jordan Retro 1</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('jordan')} />
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> Nike Air Force 1</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('Nike Air')} />
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> Nike Dunk</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('Nike Drunk')} />
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> Hiking</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('hiking')} />
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> Nike Air Max</label> <br />
@@ -433,11 +435,11 @@ export default function NewArrival() {
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> adidas Boost</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('Adidas')} />
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> adidas UltraBOOST</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('adidas')} />
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> adidas NMD</label> <br />
@@ -445,15 +447,15 @@ export default function NewArrival() {
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> adidas Originals</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('Adidas')} />
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> adidas Stan Smith</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('Adidas')} />
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> adidas Superstars</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('Adidas')} />
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> Converse Chuck Taylor</label> <br />
@@ -461,11 +463,11 @@ export default function NewArrival() {
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> Reebok Classics</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('Reebok')} />
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> Puma Suede</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('Puma')} />
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> New Balance Classics</label> <br />
@@ -473,11 +475,11 @@ export default function NewArrival() {
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> Nike Sportswear</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('Nike')} />
             </div>
             <div className="categories-container-name-checkbox-div">
               <label> Nike Club Fleece</label> <br />
-              <input className="checkbox" type="checkbox" />
+              <input className="checkbox" type="checkbox" onChange={() => setText('Nike')} />
             </div>
           </div>
           <br />
@@ -490,6 +492,7 @@ export default function NewArrival() {
         {/* Grid-container-starts */}
         <div className="Grid-container">
           <p className="grid-container-heading">NEW ARRIVALS</p>
+          {/* <p style={{ textAlign: 'left', marginLeft: '30px', fontSize: '20px' }}>{text}</p> */}
           <Grid
             width={"95%"}
             margin="auto"
@@ -502,13 +505,21 @@ export default function NewArrival() {
             gap={6}
           >
             {data.map((item) => (
-              <GridItem className="items-in-grid" key={item.id}>
+              <GridItem
+                whileHover={{ scale: 1.1 }}
+                className="items-in-grid" key={item.id}>
                 <Link to={`/men/${item.id}`}>
                   <img src={item.image1} alt="" />
+
+
+
                   <h5 className="item-title">{item.title}</h5>
-                  <p>{item.type}</p>
-                  <p>{item.color}</p>
-                  <h5> Price:${item.price}.00</h5>
+                  <hr style={{ margin: '10px 0px' }} />
+                  <p>Brand : {item.brand}</p>
+                  <p>Colour {item.color}</p>
+                  {/* <p>Size UK: {item.size[1]},{item.size[3]}</p> */}
+                  <h5 className="item-price"> Price: ${item.price}.00</h5>
+                  <p className="quick-voiew-btn">Quick View </p>
                 </Link>
               </GridItem>
             ))}
@@ -519,8 +530,10 @@ export default function NewArrival() {
       </div>
       {/* Newarrivals-main-container End */}
       <Grid
-        width={"80%"}
-        margin="auto"
+        width={"90%"}
+        margin='auto'
+        marginTop="30px"
+        marginBottom='20px'
         templateColumns={{
           base: "repeat(1, 1fr)",
           md: "repeat(2, 1fr)",

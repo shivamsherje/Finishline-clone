@@ -16,12 +16,21 @@ import { BsPlusLg } from 'react-icons/bs';
 import status from '../image/status.jpg'
 import { Text } from '@chakra-ui/react'
 import { Heading } from '@chakra-ui/react'
+import { useDispatch } from 'react-redux'
+import { addProduct } from '../Redux/action'
+import { useSelector } from 'react-redux'
+
 
 export default function MenDetail() {
+    const dispatch = useDispatch()
     const [obj, setObj] = useState({})
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
     const [sizeactive, setsizeActive] = useState(false);
+    const [cart, setCart] = useState([]);
+
+    const cartvalue = useSelector((store) => store.cart.cart.length)
+    console.log({ "cartvalue": cartvalue })
 
     //this function for chekbox
     const [selectedValue, setSelectedValue] = React.useState("first");
@@ -43,12 +52,12 @@ export default function MenDetail() {
     console.log(id)
 
     useEffect(() => {
-        axios.get(`https://mirsat-vercel-database-eqatqtp9z-saikhmirsat.vercel.app/sportszone/${id}`)
+        axios.get(`https://shivam-vercel-db-eh2q.vercel.app/sportsline/${id}`)
             .then((res) => setObj(res.data))
     }, [id])
     console.log(obj)
 
-
+   
 
 
     return (
@@ -168,7 +177,7 @@ export default function MenDetail() {
                     </div>
                     <p className='men-det-freeship'>FREE PICKUP</p>
 
-                    <button className='men-detail-add-to-cart'>ADD TO BAG</button>
+                    <button className='men-detail-add-to-cart' onClick={() => dispatch(addProduct(obj))}>ADD TO BAG</button>
                     <div className='men-detail-status-des'>
                         <div>
                             <img src={status} alt="" />

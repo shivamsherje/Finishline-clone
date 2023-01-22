@@ -4,6 +4,8 @@ import { Route, Routes } from 'react-router-dom'
 import Accessories from '../Pages/Accessories'
 import Boys from '../Pages/Boys'
 import Brands from '../Pages/Brands'
+import Cart from '../Pages/Cart'
+import Checkout from '../Pages/Checkout'
 import Clothing from '../Pages/Clothing'
 import Favorites from '../Pages/Favorites'
 import Girls from '../Pages/Girls'
@@ -12,12 +14,16 @@ import Men from '../Pages/Men'
 import MenDetail from '../Pages/MenDetail'
 import MenItem from '../Pages/MenItem'
 import NewArrival from '../Pages/NewArrival'
+import Profile from '../Pages/Profile'
 import Register from '../Pages/Register'
 import Releases from '../Pages/Releases'
+import RunningShoes from '../Pages/RunningShoes'
 import Sales from '../Pages/Sales'
 import Signin from '../Pages/Signin'
 import Status from '../Pages/Status'
 import Women from '../Pages/Women'
+import Casualshoe from '../Pages/Casualshoe'
+import Basketballshoe from "../Pages/Basketballshoe"
 
 export default function Allroutes() {
     return (
@@ -38,7 +44,13 @@ export default function Allroutes() {
             <Route path='/status' element={<Status />}></Route>
             <Route path='/favorites' element={<Favorites />}></Route>
             <Route path='/men/:id' element={<MenDetail />}></Route>
-            <Route path='/menitems' element={<MenItem/>}></Route>
+            <Route path='/menitems' element={<MenItem />}></Route>
+            <Route path='/userprofile' element={<Profile />}></Route>
+            <Route path='/runningshoes' element={<RunningShoes />}></Route>
+            <Route path='/casualshoes' element={<Casualshoe />}></Route>
+            <Route path='/basketballshoe' element={<Basketballshoe />}></Route>
+            <Route path='/cart' element={<Cart />}></Route>
+            <Route path='/checkout' element={<Checkout />}></Route>
             {/* <Route path='' element={}></Route> */}
         </Routes>
     )

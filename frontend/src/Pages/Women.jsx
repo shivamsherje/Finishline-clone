@@ -45,7 +45,7 @@ export default function Women() {
   const [data, setData] = useState([])
 
   const GetData = () => {
-      axios.get(`https://mirsat-vercel-database-eqatqtp9z-saikhmirsat.vercel.app/sportszone`)
+      axios.get(`https://shivam-vercel-db-eh2q.vercel.app/sportsline`)
           .then((res) => setData(res.data))
   }
   useEffect(() => {
@@ -60,6 +60,8 @@ export default function Women() {
 // const newArrival = data.filter((ele) => {
 //     return ele.brand == 'fila'
 // })
+
+
 const men = data.filter((ele) => {
     return ele.for_whom === 'men'
 })

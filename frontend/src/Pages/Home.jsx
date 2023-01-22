@@ -54,7 +54,7 @@ export default function Home() {
     const [data, setData] = useState([])
 
     const GetData = () => {
-        axios.get(`https://mirsat-vercel-database-eqatqtp9z-saikhmirsat.vercel.app/sportszone`)
+        axios.get(`https://shivam-vercel-db-eh2q.vercel.app/sportsline`)
             .then((res) => setData(res.data))
     }
     useEffect(() => {

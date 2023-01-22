@@ -38,8 +38,25 @@ import Slider from "react-slick";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Footer from "../Footer/Footer";
 import { useEffect, useState } from "react";
+import {  useNavigate } from "react-router-dom";
 
 export default function Men() {
+
+  const Navigate = useNavigate()
+  const runningFunc = () => {
+    Navigate('/runningshoes')
+  }
+
+
+  const casualFunc=()=>{
+    Navigate('/casualshoes')
+
+  }
+
+  const basketballFunc=()=>{
+    Navigate('/basketballshoe')
+
+  }
   const list = [img7, img8, img9, img10, img11];
 
   const [data, setData] = useState([]);
@@ -47,7 +64,7 @@ export default function Men() {
   const GetData = () => {
     axios
       .get(
-        `https://mirsat-vercel-database-eqatqtp9z-saikhmirsat.vercel.app/sportszone`
+        `https://shivam-vercel-db-eh2q.vercel.app/sportsline`
       )
       .then((res) => setData(res.data));
   };
@@ -55,13 +72,13 @@ export default function Men() {
     GetData();
   }, []);
 
-  const resultArr = data.filter((ele) => {
-    return ele.brand == "nike";
-  });
+  // const resultArr = data.filter((ele) => {
+  //   return ele.brand == "nike";
+  // });
 
-  const newArrival = data.filter((ele) => {
-    return ele.brand == "fila";
-  });
+  // const newArrival = data.filter((ele) => {
+  //   return ele.brand == "fila";
+  // });
   const men = data.filter((ele) => {
     return ele.for_whom == "men";
   });
@@ -213,19 +230,19 @@ export default function Men() {
             }}
             gap={1}
           >
-            <GridItem>
+            <GridItem onClick={runningFunc}>
               <Image src={img1} alt="" />
               <Text fontWeight={"bold"}>RUNNING SHOES</Text>
               <p style={{ textDecoration: "underline" }}>Shop Now →</p>
             </GridItem>
 
-            <GridItem>
+            <GridItem onClick={casualFunc}>
               <Image src={img2} alt="" />
               <Text fontWeight={"bold"}>CASUAL SHOES</Text>
               <p style={{ textDecoration: "underline" }}>Shop Now →</p>
             </GridItem>
 
-            <GridItem>
+            <GridItem onClick={basketballFunc}>
               <Image src={img3} alt="" />
               <Text fontWeight={"bold"}>BASKETBALL SHOES</Text>
               <p style={{ textDecoration: "underline" }}>Shop Now →</p>

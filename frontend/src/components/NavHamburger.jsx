@@ -2,13 +2,14 @@ import React from 'react'
 import {
     Drawer,
     DrawerBody,
+    // DrawerFooter,
     DrawerHeader,
     DrawerOverlay,
     DrawerContent,
     DrawerCloseButton,
     useDisclosure,
     Button,
-    
+    // Input
 } from '@chakra-ui/react'
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { IoIosSearch } from 'react-icons/io';
@@ -16,20 +17,37 @@ import { BsPersonCircle } from 'react-icons/bs';
 import { BsBag } from 'react-icons/bs';
 import { MdOutlineArrowForwardIos } from 'react-icons/md';
 import logo from '../Assets/logo.png'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+
 
 export default function NavHamburger() {
     const { isOpen, onOpen, onClose } = useDisclosure()
+
+
     const btnRef = React.useRef()
+
+    const navigate = useNavigate()
+
+    const checkIsAuth = JSON.parse(localStorage.getItem("isAuth"))
+
+    const loginFunc = () => {
+        if (checkIsAuth) {
+            navigate("/userprofile")
+        } else {
+            navigate("/signin")
+        }
+    }
+
     return (
         <div className='Hamburger-box'>
+
             <div className='hamburger-nav'>
                 <Button ref={btnRef} bg="unset" onClick={onOpen}>
                     <RxHamburgerMenu fontSize="40px" />
                 </Button>
                 <IoIosSearch fontSize="40px" />
                 <img src={logo} alt="" className='hamburger-log' />
-                <BsPersonCircle fontSize="35px" />
+                <BsPersonCircle fontSize="35px" onClick={loginFunc} />
                 <BsBag fontSize="35px" />
             </div>
             <Drawer
