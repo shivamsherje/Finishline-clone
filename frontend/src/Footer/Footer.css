@@ -1,0 +1,40 @@
+@media screen and (min-width: 200px) and (max-width:940px) {
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        /* font-size: 16px; */
+    }
+
+    .box1 {
+        margin: auto;
+        font-size: 15px;
+        width: 80%;
+
+    }
+
+
+}
+
+
+@media screen and (min-width: 200px) and (max-width:900px) {
+
+    .bottom {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 50px;
+
+    }
+
+    .socialmedia-logos {
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .socialmedia-names {
+        margin: auto;
+        flex-direction: column;
+
+    }
+
+}

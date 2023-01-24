@@ -1,0 +1,66 @@
+.card-main-con {
+    border: 1px solid rgb(232, 230, 230);
+    width: 290px;
+    text-align: left;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+
+}
+
+.card-main-con>a>div:nth-child(2) {
+    position: relative;
+    bottom: 260px;
+    left: 220px;
+
+}
+
+.card-main-con>a>img {
+    width: 100%;
+    height: 260px;
+}
+
+.card-color-main-div {
+    width: 95%;
+    margin: auto;
+    border-bottom: 1px solid rgb(215, 213, 213);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.card-div-color {
+    height: 15px;
+    width: 15px;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+
+.card-star-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.card-main-con>a>h1 {
+    font-weight: bolder;
+    font-size: 14px;
+    height: 50px;
+    line-height: 1.2;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.card-main-con>a>p {
+    padding-left: 8px;
+}
+
+.card-main-con>a>div {
+    margin-top: 5px;
+    padding-left: 8px;
+}
+
+@media (max-width: 1100px) {
+    
+}
