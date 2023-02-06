@@ -15,8 +15,8 @@ This project is the clone of the frontend website of Finishline. Its all the lan
 <li>Casual shoe page</li>
 <li>Basket Ball Page</li>
 <li>Mens Item Page</li>
-<li>Womens Item Page</li>
 <li>Cart Page<li/>
+<li>Womens Item Page</li>
 <li>Profile Page</li>
 <li>Payment Page</li>
 </ul>
