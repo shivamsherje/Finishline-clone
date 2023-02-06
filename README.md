@@ -41,27 +41,25 @@ This project is the clone of the frontend website of Finishline. Its all the lan
 ## Snapshot Of project
 
 ### Home Page
-![Screenshot (307)](https://user-images.githubusercontent.com/97978681/217015332-670825f3-dc2c-4b10-af86-cb3bdabc7a5c.png)
-
 <img width="80%" src="https://user-images.githubusercontent.com/97978681/217015332-670825f3-dc2c-4b10-af86-cb3bdabc7a5c.png"/>
 
 ### Register Page
-![Screenshot (311)](https://user-images.githubusercontent.com/97978681/217018929-e74d9a9f-e8d7-4000-8f24-f184f5aca966.png)
+<img width="80%" src="https://user-images.githubusercontent.com/97978681/217018929-e74d9a9f-e8d7-4000-8f24-f184f5aca966.png"/>
 
 ### Login Page
-![Screenshot (310)](https://user-images.githubusercontent.com/97978681/217019052-4eb82df5-332b-4474-aea8-985a86468a30.png)
+<img width="80%" src="https://user-images.githubusercontent.com/97978681/217019052-4eb82df5-332b-4474-aea8-985a86468a30.png"/>
 
 ### New Arrivals
-![Screenshot (313)](https://user-images.githubusercontent.com/97978681/217019493-5c135388-4744-4142-896f-460aad69aa82.png)
+<img width="80%" src="https://user-images.githubusercontent.com/97978681/217019493-5c135388-4744-4142-896f-460aad69aa82.png"/>
 
 ### Mens Item Details Page
-![Screenshot (314)](https://user-images.githubusercontent.com/97978681/217019765-176d0d94-31bb-40de-b1de-f4561a157dca.png)
+<img width="80%" src="https://user-images.githubusercontent.com/97978681/217019765-176d0d94-31bb-40de-b1de-f4561a157dca.png"/>
 
 ### Cart Page
-![Screenshot (315)](https://user-images.githubusercontent.com/97978681/217019816-aa9a9059-deca-4f1d-8026-e35c210b5eb0.png)
+<img width="80%" src="https://user-images.githubusercontent.com/97978681/217019816-aa9a9059-deca-4f1d-8026-e35c210b5eb0.png"/>
 
 ### Payment Page
-![Screenshot (316)](https://user-images.githubusercontent.com/97978681/217019846-3c2b7b22-a2c5-4bb9-af0c-55a3ab0c1349.png)
+<img width="80%" src="https://user-images.githubusercontent.com/97978681/217019846-3c2b7b22-a2c5-4bb9-af0c-55a3ab0c1349.png"/>
 
 ## Developer
  - **[Shivam Sherje](https://github.com/shivamsherje)**
