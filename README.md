@@ -43,7 +43,7 @@ This project is the clone of the frontend website of Finishline. Its all the lan
 ### Home Page
 ![Screenshot (307)](https://user-images.githubusercontent.com/97978681/217015332-670825f3-dc2c-4b10-af86-cb3bdabc7a5c.png)
 
-<img src="https://user-images.githubusercontent.com/97978681/217015332-670825f3-dc2c-4b10-af86-cb3bdabc7a5c.png"/>
+<img width="80%" src="https://user-images.githubusercontent.com/97978681/217015332-670825f3-dc2c-4b10-af86-cb3bdabc7a5c.png"/>
 
 ### Register Page
 ![Screenshot (311)](https://user-images.githubusercontent.com/97978681/217018929-e74d9a9f-e8d7-4000-8f24-f184f5aca966.png)
