@@ -34,9 +34,9 @@ This project is the clone of the frontend website of Finishline. Its all the lan
 <ol>
 <li>Fork the repo, then clone it</li>
 <li>install npm > npm install </li>
-<li>### `npm start`</li>
+<li></li>
 </ol>
-
+### `npm start`
 ## Snapshot Of project
 
 ### Home Page
