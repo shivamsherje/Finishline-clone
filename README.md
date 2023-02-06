@@ -2,7 +2,7 @@
 The Finish Line Inc operates as a specialty apparel store. The Company offers sandals, boots, shoes, socks, shirts, shorts, pants, jackets, hats, gloves, bags, sunglasses, and shoe care products.
 
 ## Description
-This project is the clone of the frontend website of Finishline. Its all the landing pages from the original working website, with Login/Sign OUt functionality.Completed individually in 5 days.
+This project is the clone of the frontend website of Finishline. Its all the landing pages from the original working website, with Login/Sign out functionality.This project is completed individually in 5 days.
 
 ## Functionalities :
 <ul>
@@ -33,8 +33,8 @@ This project is the clone of the frontend website of Finishline. Its all the lan
 ## Installation Requirenments
 <ol>
 <li>Fork the repo, then clone it</li>
-<li>install npm</li>
-<li>npm start</li>
+<li>install npm > npm install </li>
+<li>### `npm start`</li>
 </ol>
 
 ## Snapshot Of project
