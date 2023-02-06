@@ -37,10 +37,10 @@ This project is the clone of the frontend website of Finishline. Its all the lan
 <li>npm start</li>
 </ol>
 
-## Some Snapshot Of project
+## Snapshot Of project
 
 ### Home Page
-![Screenshot (26)](https://i.imgur.com/3p61tnr.png)
+![Screenshot (307)](https://user-images.githubusercontent.com/97978681/217015332-670825f3-dc2c-4b10-af86-cb3bdabc7a5c.png)
 
 
 
