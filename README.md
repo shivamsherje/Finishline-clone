@@ -2,7 +2,7 @@
 The Finish Line Inc operates as a specialty apparel store. The Company offers sandals, boots, shoes, socks, shirts, shorts, pants, jackets, hats, gloves, bags, sunglasses, and shoe care products.
 
 ## Description
-This project is the clone of the frontend website of Finishline. Its all the landing pages from the original working website, with Login/Sign OUt functionality.
+This project is the clone of the frontend website of Finishline. Its all the landing pages from the original working website, with Login/Sign OUt functionality.Completed individually in 5 days.
 
 ## Functionalities :
 <ul>
